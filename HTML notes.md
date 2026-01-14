@@ -1,4 +1,4 @@
-# Certification notes
+# HTML notes
 
 ### HTML
 
@@ -87,16 +87,11 @@
 - `abbr`: indicates an abbreviation or acronym
     - Sample code:
 
-<aside>
-💡
-
-<p>
+```jsx
+<p></p>
 
 <abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.
-
-</p>
-
-</aside>
+```
 
 - `address` element: Use it to build a website’s contact list
 - The `time` element is used to represent a specific moment in time.
@@ -114,16 +109,13 @@
     - `form, label` are not
 - Sample code using buttons, input, form, label:
 
-<aside>
-💡
-
+```jsx
 <form action="">
 <label for="email">Email address:</label>
 <input type="email" id="email" name="email" />
 <button type="submit">Submit form</button>
 </form>
-
-</aside>
+```
 
 - Button types: button, reset, submit
 - The `required` attribute specifies that the user needs to fill out that portion of the form before it gets submitted
@@ -195,9 +187,14 @@ Sample code:
 
 - Some use `div` to build tables instead of the `table` element
 - The `colspan` attribute specifies the number of columns a cell should span.
+- The `caption` element is used to write the title of the table
+- The `scope` attribute determines if a header is a row header or a column header.
+- Another value for the `scope` attribute is row, which indicates that a header cell is a header for its entire row
 
 ### **Working with HTML Tools**
 
 - **HTML validator**: a tool that checks the syntax of HTML code to ensure it is valid.
 - **DOM inspector**: a tool that allows you to inspect and modify the HTML structure of a web page.
 - **Devtools**: a set of web developer tools built directly into the browser that helps you debug, profile, and analyze web pages.
+- aria-hidden attribute: Used to hide an element from assistive technologies such as screen readers. For example, this can be used to hide decorative images that do not provide any meaningful content.
+- aria-describedby attribute: Used to provide additional information about an element by associating it with another element that contains the information. This helps assistive technologies understand the purpose of the element.
